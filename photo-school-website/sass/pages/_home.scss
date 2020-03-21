@@ -1,0 +1,98 @@
+.section-about {
+    padding: 20rem 0;
+    // margin-top: 10vh;
+    margin-bottom: 3rem;
+
+    @include respond(tablet-portrait) {
+        padding: 15rem 0;
+    }
+}
+
+.section-about__container {
+    padding: 3rem 0;
+    margin-bottom: 30rem;
+
+    @include respond(tablet-portrait) {
+        padding: 2rem 0;
+    }
+}
+
+.section-offer {
+    padding: 15rem 0;
+    // margin-top: 10vh;
+    background-image: url(../img/background_offer.jpg);
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include respond(tablet-portrait) {
+        padding: 10rem 0;
+    }
+}
+
+.section-bestsellers {
+    padding: 15rem 0 15rem 0;
+    // background-color: $color-primary-text;
+
+    @include respond(tablet-portrait) {
+        padding: 10rem 0 10rem 0;
+    }
+}
+
+.section-lecturers {
+    position: relative;
+    padding: 10rem 0;
+    background-color: rgba($color-primary-light, .5);
+    overflow: hidden;
+
+    @include respond(tablet-portrait) {
+        padding: 6rem 0;
+    }
+}
+
+.section-contact {
+    padding: 7rem;
+    border-bottom: 2rem solid $color-red;
+    margin-top: 2rem;
+
+    @include respond(tablet-portrait) {
+        padding: 5rem 0;
+    }
+}
+
+.contact {
+    margin-bottom: 10rem;
+    background-image: 
+        linear-gradient(105deg, 
+        rgba($color-red, .8) 0%, 
+        rgba($color-primary-light, .8) 60%,
+        transparent 40%), 
+        url(../img/background-contact.jpg);
+    background-size: 100%;
+    border-radius: $corners;
+    box-shadow: $shadow;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+    @include respond(tablet-portrait) {
+        background-image: 
+        linear-gradient(105deg, 
+        rgba($color-red, .8) 0%,
+        rgba($color-primary-light, .8) 100%,
+        transparent 60%), 
+        url(../img/background-contact.jpg);
+        background-size: cover;
+    }
+
+    &__form {
+        width: 60%;
+        padding: 2rem;
+    }
+
+    @include respond(tablet-portrait) {
+        width: 100%;
+    }
+}

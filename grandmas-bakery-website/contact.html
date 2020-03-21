@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to our bakery</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<header>
+  <div class="logo-bar">
+<!--logo-->
+    <a href="html/index.html">
+      <img src="img/logo.png" alt="Logo">
+    </a>
+  </div>
+<!--menu, navigation-->
+  <nav>
+    <ul>
+      <li><a href="html/index.html">HOME</a></li>
+      <li>ABOUT</li>
+      <li>OFFER</li>
+      <li>CONTACT</li>
+    </ul>
+  </nav>
+</header>
+
+<!--Form section-->
+			<form action="" method="" class="main-contact-form" />
+      <h1 class="form-section-header">Send us a message</h1>
+				<fieldset>
+            <section>
+                <label class="label">How can we help you?</label>
+                <label class="input">
+                    <input type="text" list="list" placeholder="Please select your contact reason" required/>
+                    <datalist id="list">
+                        <option value="I would like to order a cake" />
+                        <option value="I would like to cooperate with Grandma's" />
+                        <option value="Positive feedback" />
+                        <option value="Negative feedback" />
+                        <option value="Other" />
+                    </datalist>
+                </label>
+            </section>
+					<section>
+						<label class="label">Your contact details</label>
+						<label class="input">
+                <input type="text" placeholder="Your name and surname">
+                <input type="email" placeholder="Your email address">
+                <input type="number" placeholder="Your phone number" maxlength="14">
+            </label>
+					</section>
+          <fieldset>					
+              <section>
+                <label class="label">Your message</label>
+                <label class="textarea">
+                  <textarea rows="6"></textarea>
+                </label>
+              </section>
+            </fieldset>
+					<section>
+						<label class="label">Do you want to show us something? You can send a file.</label>
+						<label for="file" class="input input-file">
+							<div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value" />Browse</div><input type="text" readonly="" />
+						</label>
+					</section>					
+						
+				</fieldset>		
+				
+				 <fieldset>
+            <section>
+                <label class="label">How often do you visit Grandma's?</label>
+                <div class="inline-group">
+                    <label class="radio">
+                        <input type="radio" name="radio-inline" checked="" /><i></i>Everyday</label>
+                    <label class="radio">
+                        <input type="radio" name="radio-inline" /><i></i>A few times a week</label>
+                      <label class="radio">
+                          <input type="radio" name="radio-inline" /><i></i>Once a month or less</label>
+                </div>
+            </section>
+        </fieldset>
+        <fieldset>
+            <section>
+                <label class="label">Your favourites from Grandma's</label>
+                <div class="row">
+                    <div class="col col-4">
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" checked="" /><i></i>Bread</label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" /><i></i>Buns</label>
+                    </div>
+                    <div class="col col-4">
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" /><i></i>Croissants</label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" /><i></i>Baguettes</label>
+                    </div>
+                    <div class="col col-4">
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" /><i></i>Cupcakes</label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" /><i></i>Cookies</label>
+                    </div>
+                </div>
+            </section>
+        </fieldset>
+        <footer>
+            <button type="submit" class="button">Send your message</button>
+            <button type="reset"  class="button button-secondary">Reset</button>
+        </footer>
+        </form>
+
+<!--Map section-->
+  <section class="section-map">
+      <h1 class="form-section-header">Where to find us</h1>
+    <picture>
+      <source media="(min-width: 600px)" srcset="img/map_big.png">
+      <img src="img/map_small.png" alt="Bakery location">
+    </picture>
+  </section>
+
+  
+
+</main>
+  <footer>
+    Grandma's Bakery &copy; 2017 All rights reserved<br>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+// Reset
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// Basic values
+
+// 1rem = 10px
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    // width < 900
+    @include respond(tablet-landscape) { 
+        font-size: 56.25%;
+    }
+
+    // width < 600
+    @include respond(tablet-portrait) {
+        font-size: 50%;
+    }
+
+    // width > 1800
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: $color-black;
+
+    @include respond(tablet-portrait) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-red;
+    color: $color-white;
+}

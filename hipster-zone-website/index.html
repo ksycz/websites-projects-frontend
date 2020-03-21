@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <title>Hipster Zone Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Fonty Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- bxSlider CSS file -->
+    <link href="style/jquery.bxslider.css" rel="stylesheet" />
+    <!-- owl slider-->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <!-- Animate CSS-->
+    <link href="style/animate.css" rel="stylesheet" />
+
+    <!-- Style LESS -->
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+
+    <!-- JS LESS -->
+    <script src="js/less.min.js"></script>
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- mobilne menu -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- Ladowanie obrazkow -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- owl slider -->
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <!-- Odliczanie -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Viewport Checker -->
+    <script src="js/jquery.viewportchecker.js"></script>
+    <!-- YTPlayer -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- glowny kontener -->
+    <div id="main-container">
+
+        <!-- Nawigacja -->
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="navbar">
+                        <div class="nav-logo">
+                            <a href=""><img src="images/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="main-menu-content">
+                            <ul id="main-menu">
+                                <li><a href="" class="menu-link-active">Home</a></li>
+                                <li><a href="">Offer</a></li>
+                                <li><a href="">Reviews</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- menu mobilne -->
+                        <div id="attach-mobile-menu">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <div class="top-slider">
+            <ul class="bxslider" id="main-slider">
+                <li>
+                    <div class="main-slide-1">
+                        <div class="container">
+                            <div class="main-slider-content">
+                                <h1>Welcome to...</h1>
+                                <p>...Hipster Zone</p>
+                                <a href="">See more</a>
+                                <img src="images/slider_1_camera.png" alt="" class="animated zoomIn">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="main-slide-2">
+                        <div class="container">
+                            <div class="main-slider-content">
+                                <h1>We will make you...</h1>
+                                <p>..TRUE HIPSTER</p>
+                                <a href="">See more</a>
+                                <img src="images/slider_2_hipster.png" alt="" class="animated zoomIn">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sekcja nasze uslugi -->
+        <div class="our-services">
+            <div class="container">
+                <div class="single-col">
+                    <span><i class="fa fa-heart"></i></span>
+                    <h3>Hair and beard styling</h3>
+                    <p>Farm-to-table jianbing typewriter, pop-up vegan lomo portland lumbersexual hammock gluten-free tilde. </p>
+                </div>
+                <div class="single-col">
+                    <span><i class="fa fa-briefcase"></i></span>
+                    <h3>Retro fashion</h3>
+                    <p>Subway tile chillwave irony, iPhone la croix pickled art party portland etsy deep v authentic pabst gentrify.</p>
+                </div>
+                <div class="single-col">
+                    <span><i class="fa fa-bicycle"></i></span>
+                    <h3>Retro bicycles rental</h3>
+                    <p>Direct trade stumptown wolf semiotics, flannel quinoa copper mug hexagon pour-over.</p>
+                </div>
+                <div class="single-col">
+                    <span><i class="fa fa-camera-retro"></i></span>
+                    <h3>Hipster accessories</h3>
+                    <p>Meggings microdosing cloud bread, shoreditch jean shorts kogi knausgaard cred cliche.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja nasze portfolio -->
+        <div class="portfolio">
+
+            <!-- tytul -->
+            <div class="section-title">
+                <div class="container" data-animate="bounceIn">
+                    <h2>Our offer</h2>
+                    <p>8-bit gochujang helvetica, pok pok asymmetrical microdosing stumptown cloud bread.</p>
+                </div>
+            </div>
+
+            <!-- slider -->
+            <div class="portfolio-slider">
+                <div class="container" data-animate="fadeIn">
+                    <div id="portfolio-carousel" class="owl-carousel">
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os1.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os2.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os3.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os4.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os1.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os3.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os2.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os1.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os4.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Project example</h3>
+                                    <p>16th of August 2017</p>
+                                    <a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+                                    <a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sekcja content -->
+        <div class="content-offer">
+            <div class="container" data-animate="zoomIn">
+                <div class="section-title">
+                    <h2>We will take care of you</h2>
+                    <p>Taiyaki mustache art party, meggings disrupt street art artisan lumbersexual mixtape synth godard.</p>
+                </div>
+                <img src="images/barber.png" alt="">
+            </div>
+        </div>
+
+        <!-- Sekcja video -->
+        <div class="section-video">
+            <div id="movie" style="position:absolute">
+            </div>
+            <div class="video-line">
+                <div class="container" data-animate="zoomIn">
+                    <h2>How do we work</h2>
+                    <a href="#" class="button">Watch us</a>
+                </div>
+            </div>
+            <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=RYQHxf0FzeM',containment:'#movie',showControls:false,startAt:0,mute:true,autoPlay:true,loop:true,opacity:1}">
+            </div>
+        </div>
+
+        <!-- pasek ponizej video -->
+        <div class="section-video-text">
+            <div class="container">
+                <h2>Click to contact us
+                    <a href="#" class="button">Click here</a>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Sekcja Nasze zalety -->
+        <div class="advantages">
+            <div class="section-title">
+                <div class="container" data-animate="bounceIn">
+                    <h2>Why you should choose us</h2>
+                    <p>Hella bitters mumblecore food truck farm-to-table shaman 3 wolf moon lyft freegan truffaut celiac.h</p>
+                </div>
+            </div>
+            <!-- wlasciwa tresc -->
+            <div class="advantages-content">
+                <div class="container">
+                    <!-- zalety - jeden element -->
+                    <div class="single-col" data-animate="fadeInLeft">
+                        <span><i class="fa fa-male"></i></span>
+                        <div class="services-content">
+                            <h3>Experienced team</h3>
+                            <p>yft taxidermy locavore sriracha cray iceland. </p>
+                        </div>
+                    </div>
+                    <!-- zalety - jeden element -->
+                    <div class="single-col" data-animate="fadeInUp">
+                        <span><i class="fa fa-css3"></i></span>
+                        <div class="services-content">
+                            <h3>Keeping abreast of trends</h3>
+                            <p>Pickled direct trade tumeric, leggings bicycle rights gochujang waistcoat iPhone food truck iceland hot chicken af flannel.</p>
+                        </div>
+                    </div>
+                    <!-- zalety - jeden element -->
+                    <div class="single-col" data-animate="fadeInRight">
+                        <span><i class="fa fa-line-chart"></i></span>
+                        <div class="services-content">
+                            <h3>4 years of experience</h3>
+                            <p>Readymade gluten-free cred unicorn organic XOXO woke plaid next level 90's pop-up kombucha bushwick.</p>
+                        </div>
+                    </div>
+                    <!-- zalety - jeden element -->
+                    <div class="single-col" data-animate="fadeInLeft">
+                        <span><i class="fa fa-bookmark-o"></i></span>
+                        <div class="services-content">
+                            <h3>Best products</h3>
+                            <p>Meggings marfa artisan slow-carb letterpress, beard normcore la croix.  </p>
+                        </div>
+                    </div>
+                    <!-- zalety - jeden element -->
+                    <div class="single-col" data-animate="fadeInUp">
+                        <span><i class="fa fa-external-link"></i></span>
+                        <div class="services-content">
+                            <h3>Professional photo sessions</h3>
+                            <p>Listicle sustainable irony shoreditch. Snackwave salvia enamel pin, succulents hexagon pitchfork seitan live-edge man bun.</p>
+                        </div>
+                    </div>
+                    <!-- zalety - jeden element -->
+                    <div class="single-col" data-animate="fadeInRight">
+                        <span><i class="fa fa-calculator"></i></span>
+                        <div class="services-content">
+                            <h3>Recognizable brand</h3>
+                            <p>Mumblecore tousled XOXO fanny pack before they sold out.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja statystyki -->
+        <div class="statistics">
+            <div class="container">
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3><span class="timer" data-from="0" data-to="50" data-speed="3000" data-speed="5000" data-refresh-interval="5"></span></h3>
+                        <p>Satisfied hipsters</p>
+                    </div>
+                </div>
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3><span class="timer" data-from="0" data-to="46" data-speed="3000" data-speed="5000" data-refresh-interval="50"></span></h3>
+                        <p>Completed projects</p>
+                    </div>
+                </div>
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3><span class="timer" data-from="0" data-to="4" data-speed="3000" data-speed="5000" data-refresh-interval="50"></span></h3>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3><span class="timer" data-from="0" data-to="66" data-speed="3000" data-speed="5000" data-refresh-interval="50"></span></h3>
+                        <p>Other important staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja paralax -->
+        <div class="photo-banner">
+            <div class="photo-banner-inner">
+                <div class="container" data-animate="zoomIn">
+                    <h2>Very fancy parallax banner</h2>
+                    <a href="#" class="button">Zobacz</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja nasz zespol -->
+        <div class="our-team">
+            <div class="container" data-animate="zoomIn">
+                <div class="section-title">
+                    <h2>Why do you need to become hipster</h2>
+                    <p>Meggings microdosing cloud bread, shoreditch jean shorts kogi knausgaard cred cliche.</p>
+                </div>
+                <div class="team-members">
+                    <!-- jedna osoba -->
+                    <div class="team-member single-col">
+                        <img src="images/team_1.jpg" alt="">
+                        <div>
+                            <h3>John Smith</h3>
+                            <span>Barber</span>
+                            <p>Health goth vice tilde, 90's tumblr gochujang vexillologist.</p>
+                            <ul class="members-social">
+                                <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="googleplus"><i class="fa fa-google-plus"></i></i></a></li>
+                                <li><a href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- jedna osoba -->
+                    <div class="team-member single-col">
+                        <img src="images/team_1.jpg" alt="">
+                        <div>
+                            <h3>John Smith</h3>
+                            <span>Stylist</span>
+                            <p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+                            <ul class="members-social">
+                                <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="googleplus"><i class="fa fa-google-plus"></i></i></a></li>
+                                <li><a href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- jedna osoba -->
+                    <div class="team-member single-col">
+                        <img src="images/team_1.jpg" alt="">
+                        <div>
+                            <h3>John Smith</h3>
+                            <span>Photographer</span>
+                            <p>Taiyaki mustache art party, meggings disrupt street art artisan lumbersexual mixtape synth godard.</p>
+                            <ul class="members-social">
+                                <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="googleplus"><i class="fa fa-google-plus"></i></i></a></li>
+                                <li><a href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider opinie -->
+        <div class="opinions">
+            <div class="container">
+                <div class="section-title" data-animate="zoomIn">
+                    <h2>Why do you need us</h2>
+                    <p>Hoodie taxidermy migas forage poke 90's small batch.  Health goth mustache letterpress lomo.</p>
+                </div>
+                <div class="opinions-content" data-animate="fadeIn">
+                    <ul class="bxslider" id="opinions-slider">
+                        <li>
+                            <p>Meh biodiesel chartreuse, disrupt occupy letterpress gastropub ethical small batch.</p>
+                            <h3>First Hipster</h3>
+                        </li>
+                        <li>
+                            <p>Helvetica waistcoat knausgaard fixie hashtag. Celiac taxidermy dreamcatcher, occupy shaman ennui quinoa truffaut wolf polaroid la croix chillwave asymmetrical. </p>
+                            <h3>Second Hipster</h3>
+                        </li>
+                        <li>
+                            <p>Viral vegan asymmetrical, whatever selfies readymade mlkshk plaid disrupt woke godard enamel pin hella chambray raw denim.</p>
+                            <h3>Third Hipster</h3>
+                        </li>
+                        <li>
+                            <p>Direct trade stumptown wolf semiotics, flannel quinoa copper mug hexagon pour-over.</p>
+                            <h3>Fourth Hipster</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stopka -->
+        <footer>
+            <div class="footer-main">
+                <div class="container">
+                    <!-- Social -->
+                    <div class="single-col">
+                        <h3>About us</h3>
+                        <p>Celiac taxidermy dreamcatcher, occupy shaman ennui quinoa truffaut wolf polaroid la croix chillwave asymmetrical.</p>
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Nasz blog -->
+                    <div class="single-col our-blog">
+                        <h3>Our blog</h3>
+                        <ul>
+                            <li>
+                                <h4><a href="">Hoodie taxidermy migas gastropub ethical.</a></h4>
+                                <span class="post-date">16th of August 2017</span>
+                            </li>
+                            <li>
+                                <h4><a href="">Forage poke 90's small batch.</a></h4>
+                                <span class="post-date">16th of August 2017</span>
+                            </li>
+                            <li>
+                                <h4><a href="">Meh biodiesel chartreuse, disrupt occupy letterpress.</a></h4>
+                                <span class="post-date">16th of August 2017</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- gallery -->
+                    <div class="single-col footer-gallery">
+                        <h3>Gallery</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/gallery/1.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/gallery/2.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/gallery/3.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/gallery/4.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/gallery/2.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/gallery/1.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Linki -->
+                    <div class="single-col more-links">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright -->
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright 2017 © <a href="">Katarzyna Sycz</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            /* menu mobilne */
+            $('#main-menu').slicknav({
+                prependTo: '#attach-mobile-menu',
+                label: ''
+            });
+            /* odliczanie */
+            $('.timer').countTo(''); 
+            /* viewport */
+            $('*[data-animate]').addClass('hide').each(function() {
+                $(this).viewportChecker({
+                    classToAdd: 'show animated ' + $(this).data('animate'),
+                    classToRemove: 'hide',
+                    offset: 200
+                });
+            });
+            /* YTPlayer */
+            $('.player').YTPlayer();
+
+        });
+
+        $('#main-container').imagesLoaded(function() {
+            /* glowny slider */
+            $('#main-slider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                controls: true,
+                pager: false 
+                
+            });
+            /* Slider opinie */
+            $('#opinions-slider').bxSlider({
+                mode: 'vertical',
+                auto: true,
+                controls: false,
+                pager: false
+            });
+            $('#portfolio-carousel').owlCarousel({
+                autoPlay: 10000,
+                items: 3,
+                itemsDesktopSmall: [1199, 2],
+                itemsTablet: [768, 1]
+            });
+        });
+    </script>
+</body>
+
+</html>

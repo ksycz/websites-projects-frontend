@@ -1,0 +1,63 @@
+.composition {
+    position: relative;
+    padding: 1rem;
+
+    &__photo {
+        width: 70%;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        filter: contrast(70%);
+        border-radius: $corners;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+
+        @include respond(tablet-portrait) {
+            float: left;
+            position: relative;
+            width: 33.33333333%;
+        }
+
+        &--photo1 {
+            left: 0;
+            top: -2rem;
+
+            @include respond(tablet-portrait) {
+                display: none;
+            }
+        }
+
+        &--photo2 {
+            right: 0;
+            top: 2rem;
+
+            @include respond(tablet-portrait) {
+                display: none;
+            }
+        }
+
+        &--photo3 {
+            left: 20%;
+            top: 10rem;
+
+            @include respond(tablet-portrait) {
+                left: -3rem;
+                top: 1rem;
+                width: 100%;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 20;
+            filter: contrast(100%);
+            
+        }
+
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+    //composition:hover composition__photo:not(:hover) {
+}

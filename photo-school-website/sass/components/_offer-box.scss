@@ -1,0 +1,23 @@
+.offer-box {
+    background-color: rgba($color-primary-light, .8);
+    font-size: 1.5rem;
+    padding: 5rem;
+    text-align: center;
+    transition: transform .3s;
+    border-radius: $corners;
+
+    &__icon {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+
+        @include respond(tablet-portrait) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+        opacity: 0.8;
+    }
+}

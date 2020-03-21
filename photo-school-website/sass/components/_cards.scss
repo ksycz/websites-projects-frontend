@@ -1,0 +1,187 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 53rem;
+
+    &__side {
+        font-size: 2rem;
+        height: 53rem;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // it hides the back side of an element
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: $corners;
+        box-shadow: $shadow;
+        overflow: hidden;
+
+        &--front {
+            background-color: $color-red;
+
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            background-color: $color-red;
+        }
+    }
+// when we hover a card we want to transform front
+    &:hover &__side--front {
+        // we need to move the element to the opposite direction
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // Front side of the card
+
+    &__picture {
+        position: absolute;
+
+        &--pic1 {
+            background-image: url(../img/landscape.jpg);
+            background-size: cover;
+            height: 25rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+
+        &--pic2 {
+            background-image: url(../img/portrait.jpg);
+            background-size: cover;
+            height: 25rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+
+        &--pic3 {
+            background-image: url(../img/food.jpg);
+            background-size: cover;
+            height: 25rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    }
+
+    &__heading {
+        z-index: 100;
+        font-size: 2rem;
+        color: $color-black;
+        position: absolute;
+        top: 20rem;
+        right: 1rem;
+        width: 80%;
+        font-weight: 600;         
+    }
+
+    &__heading-span {
+        padding: 1rem 2rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        background-color: $color-white;
+        opacity: 0.7;
+        border-radius: $corners;
+    }
+
+    &__body {
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 2rem;
+                color: $color-white;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-white;
+                }
+            }
+        }
+    }
+     // Back side of the card
+
+     &__call-to-action {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+     }
+
+     &__price-box {
+        text-align: center;
+        margin-bottom: 10rem;
+        color: $color-white;
+        opacity: .8;
+
+     }
+
+     &__price-value {
+         font-size: 8rem;
+         font-weight: 400;
+     }
+
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+        height: auto;
+        border-radius: $corners;
+        background-color: $color-red;
+        box-shadow: $shadow;
+    
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+    
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    // when we hover a card we want to transform front
+        &:hover &__side--front {
+            // we need to move the element to the opposite direction
+            transform: rotateY(0);
+        }
+    
+         // Back side of the card
+    
+         &__call-to-action {
+             position: relative;
+             top: 0;
+             left: 0;
+             transform: translate(0);
+             width: 100%;
+             padding: 7rem 4rem 4rem 4rem; 
+         }
+    
+         &__price-box {
+            margin-bottom: 7rem;
+         }
+    
+         &__price-value {
+             font-size: 5rem;
+
+         }
+        
+    }
+}
+
+// .btn {
+//     margin: 0 auto;
+// }
